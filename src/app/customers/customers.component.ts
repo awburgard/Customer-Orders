@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ICustomer } from '../shared/interfaces';
 
+// Creates Customers
 @Component({
   selector: 'app-customers',
   templateUrl: './customers.component.html',

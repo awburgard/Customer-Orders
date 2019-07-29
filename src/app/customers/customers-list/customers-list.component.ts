@@ -18,9 +18,9 @@ export class CustomersListComponent implements OnInit {
     }
   }
 
-  filteredCustomers: ICustomer[] = [];
-  customerOrdersTotal: number;
-  currencyCode: 'USD';
+  filteredCustomers: any[] = [];
+  customersOrderTotal: number;
+  currencyCode: string = 'USD';
 
   constructor() { }
 
@@ -29,14 +29,13 @@ export class CustomersListComponent implements OnInit {
   }
 
   calculateOrders() {
-    this.customerOrdersTotal = 0;
+    this.customersOrderTotal = 0;
     this.filteredCustomers.forEach((cust: ICustomer) => {
-      this.customerOrdersTotal += cust.orderTotal;
+      this.customersOrderTotal += cust.orderTotal;
     });
   }
 
   sort(prop: string) {
-    // a sorter service will handle the sorting
+    // A sorter service will handle the sorting
   }
-
 }

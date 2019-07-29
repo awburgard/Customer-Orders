@@ -7,6 +7,7 @@ import { CustomersComponent } from './customers/customers.component';
 import { CustomersListComponent } from './customers/customers-list/customers-list.component';
 import { FilterTextboxComponent } from './customers/customers-list/filter-textbox/filter-textbox.component';
 import { SharedModule } from './shared/shared.module';
+import { CapitalizePipe } from './shared/capitalize.pipe';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { SharedModule } from './shared/shared.module';
     CustomersComponent,
     CustomersListComponent,
     FilterTextboxComponent,
+    CapitalizePipe,
   ],
   imports: [
     BrowserModule,

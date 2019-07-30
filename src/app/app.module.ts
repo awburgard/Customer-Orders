@@ -10,6 +10,9 @@ import { FilterTextboxComponent } from './customers/customers-list/filter-textbo
 import { SharedModule } from './shared/shared.module';
 import { CapitalizePipe } from './shared/capitalize.pipe';
 
+import { DataService } from './core/data.service';
+import { SorterService } from './core/sorter.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,7 @@ import { CapitalizePipe } from './shared/capitalize.pipe';
     SharedModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [DataService, SorterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

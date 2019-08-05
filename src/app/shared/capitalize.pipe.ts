@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
+// This transforms elements to uppercase
 @Pipe({
   name: 'capitalize'
 })
